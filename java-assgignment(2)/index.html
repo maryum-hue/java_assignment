@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        // CHAPTER 3
         var age = "I am 16 years old"
         alert(age);
         var visitCount = "visitCount";
@@ -30,6 +31,8 @@
         console.log("flavour:", flavour);
         console.log("num:", num );
 
+        // CHAPTER 4
+
         // LEGAL AND ILLEGALL VARIABLES
 
         // LEGAL VARIABLES
@@ -52,6 +55,9 @@
         document.write("Variable names are case-sensitive.<br>");
         document.write("Variable names should not be JS reserved keywords.");
         
+        
+// CHAPTER 5
+
         var num1 = 2;
         var num2 = 7;
         alert(num1 + num2)
@@ -68,7 +74,7 @@
         alert(++cal)
         
 
-// Yeh pehla question hai, yahaan simple addition kati hon
+
 var num1 = 7;
 var num2 = 2;
 alert("The result of num1 + num2 + 4 is: " + (num1 + num2 + 4));
@@ -79,18 +85,9 @@ var num4 = 6;
 var num5 = 1;
 alert("The result of the operation is: " + (++num5 * num3 + num4--));
 
-// Ab total money ka calculation dikhaya  rahi hon ma
+
 document.write("The total amount of money spent on bananas is 245 PKR.<br><br>");
 
-// Ab teesra question hai jo ek number ki multiplication table ko print karega.
-var num = 7;
-document.write("Multiplication Table of " + num + ":<br>");
-for (var i = 1; i <= 10; i++) {
-    docment.write(num + " x " + i + " = " + (num * i) + "<br>");
-}
-document.write("<br>");
-
-// Ab temperature conversion ka question hai.
 var celsius = 25;
 var fahrenheit = (celsius * 9 / 5) + 32;
 document.write(celsius + "°C is " + fahrenheit + "°F.<br>");
@@ -106,49 +103,7 @@ var quantityItem1 = 2;
 var quantityItem2 = 3;
 var shippingCharges = 100;
 
-var totalCost = (priceItem1 * quantityItem1) + (priceItem2 * quantityItem2) + shippingCharges;
 
-document.write("<h3>Shopping Receipt</h3>");
-document.write("<p>Price of Item 1: " + priceItem1 + "</p>");
-document.write("<p>Quantity of Item 1: " + quantityItem1 + "</p>");
-document.write("<p>Price of Item 2: " + priceItem2 + "</p>");
-document.write("<p>Quantity of Item 2: " + quantityItem2 + "</p>");
-document.write("<p>Shipping Charges: " + shippingCharges + "</p>");
-document.write("<h4>Total Cost: " + totalCost + " PKR</h4>");
-
-var marks = 193;
-var obtained = 169;
-var grad = "3rd";
-document.write
-
-
-var num = 10;
-var result = ((num + 5) * 10) / 2;
-document.write("<h3>Arithmetic Operations</h3>");
-document.write("The result is: " + result + "<br><br>");
-
-var currentYear = 2024;
-var birthYear = 2000;
-var age1 = currentYear - birthYear;
-var age2 = age1 - 1;
-document.write("<h3>Age Calculator</h3>");
-document.write("They are either " + age1 + " or " + age2 + " years old.<br><br>");
-
-var radius = 7;
-var pi = 3.142;
-var circumference = 2 * pi * radius;
-var area = pi * radius * radius;
-document.write("<h3>The Geometrizer</h3>");
-document.write("The circumference is: " + circumference.toFixed(2) + "<br>");
-document.write("The area is: " + area.toFixed(2) + "<br><br>");
-
-var favoriteSnack = "Chocolates";
-var currentAge = 24;
-var maxAge = 80;
-var snacksPerDay = 3;
-var totalSnacks = (maxAge - currentAge) * 365 * snacksPerDay;
-document.write("<h3>The Lifetime Supply Calculator</h3>");
-documet.write("You will need " + totalSnacks + " " + favoriteSnack + " to last you until the ripe old age of " + maxAge + ".");
 
 
 </script>
