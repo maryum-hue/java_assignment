@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Fix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Fixed First Navbar */
+        .top-navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: white;
+            border-bottom: 2px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .top-navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Second Scrollable Navbar */
+        .scroll-navbar-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            width: 100%;
+            margin-top: 5px; /* Separation from first navbar */
+            background: white;
+            padding: 10px 0;
+        }
+
+        .scroll-navbar {
+            display: flex;
+            width: max-content;
+            padding: 10px;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 15px;
+            cursor: pointer;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .nav-item img {
+            width: 24px;
+            height: 24px;
+            margin-bottom: 5px;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+        }
+
+        .nav-item.active img, .nav-item:hover img {
+            filter: grayscale(0%);
+        }
+
+        .nav-item.active {
+            font-weight: bold;
+            color: black;
+            border-bottom: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- First Navbar (Fixed) -->
+    <nav class="top-navbar">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <div class="nav-links">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">Link</a>
+        </div>
+        <div>
+            <button class="btn btn-outline-success me-2">Airbnb your home</button>
+            <button class="btn btn-outline-success me-2">Profile</button>
+        </div>
+    </nav>
+
+    <!-- Second Navbar (Scrollable) -->
+    <div class="scroll-navbar-container">
+        <div class="scroll-navbar mx-auto">
+            <div class="nav-item active"><img src="https://a0.muscache.com/pictures/7630c83f-96a8-4232-9a10-0398661e2e6f.jpg" alt="Rooms">Rooms</div>
+            <div class="nav-item"><img src="https://a0.muscache.com/im/pictures/mediaverse/category_icon/original/3e5243c8-4d15-4c6b-97e3-7ba2bb7bb880.png" alt="Icons">Icons</div>
+            <div class="nav-item"><img src="https://a0.muscache.com/pictures/3726d94b-534a-42b8-bca0-a0304d912260.jpg" alt="Top Cities">Top cities</div>
+            <div class="nav-item"><img src="https://a0.muscache.com/pictures/ed8b9e47-609b-44c2-9768-33e6a22eccb2.jpg" alt="Trending">Trending</div>
+            <div class="nav-item"><img src="https://a0.muscache.com/pictures/1b6a8b70-a3b6-48b5-88e1-2243d9172c06.jpg" alt="Castles">Castles</div>
+            <div class="nav-item"><img src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt="Farms">Farms</div>
+            <div class="nav-item"><img src="https://a0.muscache.com/pictures/8b44f770-7156-4c7b-b4d3-d92549c8652f.jpg" alt="Amazing Views">Amazing views</div>
+            <div class="nav-item"><img src="https://a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg" alt="Arctic">Arctic</div>
+            <div class="nav-item"><img src="https://a0.muscache.com/pictures/50861fca-582c-4bcc-89d3-857fb7ca6528.jpg" alt="OMG!">OMG!</div>
+            <div class="nav-item"><img src="https://a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg" alt="Design">Design</div>
+            <div class="nav-item"><img src="https://a0.muscache.com/pictures/5ed8f7c7-2e1f-43a8-9a39-4edfc81a3325.jpg" alt="Countryside">Countryside</div>
+            <div class="nav-item"><img src="https://a0.muscache.com/pictures/78ba8486-6ba6-4a43-a56d-f556189193da.jpg" alt="Mansions">Mansions</div>
+            <div class="nav-item"><img src="https://a0.muscache.com/pictures/ddd13204-a5ae-4532-898c-2e595b1bb15f.jpg" alt="Chef's Kitchens">Chef's kitchens</div>
+            <div class="nav-item"><img src="https://a0.muscache.com/pictures/5ed8f7c7-2e1f-43a8-9a39-4edfc81a3325.jpg" alt="Bed & Breakfasts">Bed & breakfasts</div>
+            <button class="btn btn-outline-dark me-2">Filter</button>
+            <button class="btn btn-outline-dark">Display total before taxes</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
